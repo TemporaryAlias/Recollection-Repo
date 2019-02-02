@@ -5,7 +5,7 @@ using UnityEngine;
 public class Platform2 : MonoBehaviour
 {
     Collider2D Collider;
-    bool activate;
+    public bool activate, toDeactivate;
 
     void Start()
     {
@@ -20,18 +20,19 @@ public class Platform2 : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
-            if (!activate) {
-                //plat.gameObject.SetActive(true);
-                gameObject.GetComponent<Renderer>().enabled = true;
-                Collider.enabled = true;
-                activate = true;
-            } else if (activate) {
-                //plat.gameObject.SetActive(false);
-                gameObject.GetComponent<Renderer>().enabled = false;
-                Collider.enabled = false;
-                activate = false;
+        if (!LevelManager._instance.peeking) {
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
+                if (!activate) {
+                    //plat.gameObject.SetActive(true);
+                    gameObject.GetComponent<Renderer>().enabled = true;
+                    Collider.enabled = true;
+                    activate = true;
+                } else if (activate) {
+                    //plat.gameObject.SetActive(false);
+                    gameObject.GetComponent<Renderer>().enabled = false;
+                    Collider.enabled = false;
+                    activate = false;
+                }
             }
         }
     }

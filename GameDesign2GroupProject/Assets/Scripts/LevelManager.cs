@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour {
     [Header("Game Variables")]
     public string gameState;
     public int currentScore;
+    public bool peeking;
+    public float cameraFOV = 70;
 
     [Space(5)]
 
@@ -133,10 +135,10 @@ public class LevelManager : MonoBehaviour {
     public void CameraFocusPlayer() {
         Camera.main.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, Camera.main.transform.position.z);
 
+        Camera.main.fieldOfView = cameraFOV;
+
         CinemachineVirtualCamera vcam = Camera.main.gameObject.GetComponent<CinemachineVirtualCamera>();
         vcam.m_Follow = player.transform;
-
-        //Camera.main.transform.SetParent(player.transform);
     }
 
     public void ResetScene() {

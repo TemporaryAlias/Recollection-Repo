@@ -7,7 +7,7 @@ public class Platform : MonoBehaviour {
 
     Collider2D Collider;
     Animator p_animator;
-    bool activate;
+    public bool activate, toDeactivate;
     
 
     void Start ()
@@ -21,18 +21,19 @@ public class Platform : MonoBehaviour {
 	
 	void Update ()  
     {
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
-            if (activate) {
-                //plat.gameObject.SetActive(false);
-                gameObject.GetComponent<Renderer>().enabled = false;
-                Collider.enabled = false;
-                activate = false;
-            } else if (!activate) {
-                //plat.gameObject.SetActive(true);
-                gameObject.GetComponent<Renderer>().enabled = true;
-                Collider.enabled = true;
-                activate = true;
+        if (!LevelManager._instance.peeking) {
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
+                if (activate) {
+                    //plat.gameObject.SetActive(false);
+                    gameObject.GetComponent<Renderer>().enabled = false;
+                    Collider.enabled = false;
+                    activate = false;
+                } else if (!activate) {
+                    //plat.gameObject.SetActive(true);
+                    gameObject.GetComponent<Renderer>().enabled = true;
+                    Collider.enabled = true;
+                    activate = true;
+                }
             }
         }
     }
