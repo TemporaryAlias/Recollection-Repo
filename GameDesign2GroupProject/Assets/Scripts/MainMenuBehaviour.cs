@@ -6,13 +6,16 @@ using UnityEngine.UI;
 public class MainMenuBehaviour : MonoBehaviour {
 
     public List<string> dialogue = new List<string>();
+    public List<Sprite> frames = new List<Sprite>();
 
     public Image fadeOutImage;
 
     public Text dialogueText;
+    public Image cutsceneImage;
 
     Color fadeColour;
     Color textColour;
+    Color imageColour;
 
     void Start () {
         fadeColour = new Color(0, 0, 0, 0);
@@ -23,6 +26,8 @@ public class MainMenuBehaviour : MonoBehaviour {
 
         if (dialogue.Count > 0) {
             textColour = Color.white;
+            imageColour = Color.white;
+
             dialogueText.color = textColour;
             StartCoroutine("Dialogue");
         }
@@ -66,20 +71,26 @@ public class MainMenuBehaviour : MonoBehaviour {
     }
 
     IEnumerator Dialogue() {
-    int diaNum = 0;
+        int diaNum = 0;
 
         while (diaNum < dialogue.Count) {
             textColour.a = 0;
+            imageColour.a = 0;
 
             dialogueText.text = dialogue[diaNum];
             dialogueText.color = textColour;
+
+            cutsceneImage.sprite = frames[diaNum];
+            cutsceneImage.color = imageColour;
 
             yield return new WaitForSeconds(1f);
 
             while (textColour.a < 1) {
                 textColour.a += 0.01f;
+                imageColour.a += 0.01f;
 
                 dialogueText.color = textColour;
+                cutsceneImage.color = imageColour;
 
                 yield return new WaitForSeconds(0.01f);
             }
@@ -88,8 +99,10 @@ public class MainMenuBehaviour : MonoBehaviour {
 
             while (textColour.a > 0) {
                 textColour.a -= 0.01f;
+                imageColour.a -= 0.01f;
 
                 dialogueText.color = textColour;
+                cutsceneImage.color = imageColour;
 
                 yield return new WaitForSeconds(0.01f);
             }
