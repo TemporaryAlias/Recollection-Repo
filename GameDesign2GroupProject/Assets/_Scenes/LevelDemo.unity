@@ -852,7 +852,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131930515}
   m_LocalRotation: {x: -0, y: -0, z: 0.12636587, w: 0.9919837}
-  m_LocalPosition: {x: -233.5, y: 15, z: 2}
+  m_LocalPosition: {x: -233.90001, y: 16.1, z: 2}
   m_LocalScale: {x: 0.10939001, y: 0.10939001, z: 0.10939}
   m_Children:
   - {fileID: 628257850}
@@ -901,12 +901,12 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.53777504, y: -2.571799}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 3.4499998, y: 2.28, z: 4.16, w: 7.0499997}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20.48, y: 10.24}
     newSize: {x: 20.48, y: 10.24}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
@@ -953,7 +953,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 1
   m_Size: {x: 20.48, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -4737,7 +4737,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.53777504, y: -2.571799}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 3.4499998, y: 2.28, z: 4.16, w: 7.0499997}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20.48, y: 10.24}
     newSize: {x: 20.48, y: 10.24}
@@ -15463,18 +15463,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.984807, y: -1.3822682}
+  m_Offset: {x: 2.8692331, y: -1.3726559}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 6.2799997, y: 3.58, z: 0.68, w: 6.35}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20.48, y: 10.24}
-    newSize: {x: 20.48, y: 10.24}
+    newSize: {x: 45.742374, y: 10.493265}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.5103855, y: 0.3489728}
+  m_Size: {x: 39.964935, y: 0.6758003}
   m_EdgeRadius: 0
 --- !u!212 &1393017281
 SpriteRenderer:
@@ -15517,8 +15517,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 20.48, y: 10.24}
+  m_DrawMode: 1
+  m_Size: {x: 45.742374, y: 10.493265}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -15532,8 +15532,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393017279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -126.799995, y: 41.2, z: 0}
-  m_LocalScale: {x: 1, y: 4, z: 1}
+  m_LocalPosition: {x: -124.5, y: 37.4, z: 0}
+  m_LocalScale: {x: 0.43111467, y: 1.7244587, z: 0.43111467}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 38
@@ -15756,7 +15756,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 2.984807, y: -1.3822682}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 6.2799997, y: 3.58, z: 0.68, w: 6.35}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20.48, y: 10.24}
     newSize: {x: 20.48, y: 10.24}
@@ -15823,8 +15823,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413028579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -230.59, y: 15.299999, z: 0}
-  m_LocalScale: {x: 1, y: 4, z: 1}
+  m_LocalPosition: {x: -230.6, y: 13.8, z: 0}
+  m_LocalScale: {x: 1, y: 2.66, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 36
@@ -17061,7 +17061,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.53777504, y: -2.571799}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 3.4499998, y: 2.28, z: 4.16, w: 7.0499997}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20.48, y: 10.24}
     newSize: {x: 20.48, y: 10.24}
@@ -19471,11 +19471,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4200490637032890, guid: 68dbf89e36518754ebc9fbdcf8b3bce4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.7034097
+      value: -263.75342
       objectReference: {fileID: 0}
     - target: {fileID: 4200490637032890, guid: 68dbf89e36518754ebc9fbdcf8b3bce4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.10209
+      value: 2.0520906
       objectReference: {fileID: 0}
     - target: {fileID: 4200490637032890, guid: 68dbf89e36518754ebc9fbdcf8b3bce4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21779,7 +21779,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.53777504, y: -2.571799}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 3.4499998, y: 2.28, z: 4.16, w: 7.0499997}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20.48, y: 10.24}
     newSize: {x: 20.48, y: 10.24}
@@ -24924,7 +24924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058594959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.649994, y: -0.58962446, z: 0}
+  m_LocalPosition: {x: -6.800003, y: -0.44291094, z: 0}
   m_LocalScale: {x: 2.4822176, y: 0.7081534, z: 2.0263}
   m_Children: []
   m_Father: {fileID: 777809899}
